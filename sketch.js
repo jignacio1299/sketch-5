@@ -70,13 +70,16 @@ function mousePressed() {
   }
   
   switch(shapeToDraw) {
-    case 0:
+    case 0: // Set args for eye1
       
       break;
-    case 1:
+    case 1: // Set args for eye2
       
       break;
-    case 2:
+    case 2: // Set args for nose
+      
+      break;
+    case 3: // Set args for mouth
       
       break;
     default:
@@ -87,7 +90,9 @@ function mousePressed() {
 let stars = [];
 let trees = [];
 let shapeToDraw = 0;
-let eye1 = { }
+let eye1 = { x: 0, y: 0, d: 0 }; // Circular eye parameters
+let eye2 = { x1: 0, y1: 0, x2: 0, y2: 0, x3: 0, y3: 0 }; // Triangular eye parameters
+
 
 function setup() {
   createCanvas(1000, 1000);
